@@ -1,6 +1,6 @@
-# Shopping Cart Vue 3 + TypeScript + Pinia Example
+# Sample Codes for CIS 371
 
-Welcome to the sample code for shopping cart application using Vue 3, TypeScript, and Pinia.
+Welcome to the sample code repository for the GVSU CIS 371 Web Application Course. You can access the course website [here](https://gvsu-cis371.github.io/syllabus.html).
 
 ## Getting Started
 
@@ -15,7 +15,7 @@ Before you begin, ensure you have a Node.js environment set up. You have two opt
 
 ### Installation
 
-To get started, clone this repository to your local machine and install the required dependencies using:
+Clone this repository to your local machine and navigate to each example project folder. Install the required dependencies with the following command:
 
 ```bash
 npm install
@@ -23,7 +23,7 @@ npm install
 
 ### Running the Development Server
 
-Launch the local development server to see the application in action:
+Launch the local development server to see the example application in action:
 
 ```bash
 npm run dev
