@@ -1,6 +1,6 @@
-# Shopping Cart Vue 3 + TypeScript + Pinia Example
+# London Fog Vue 3 + TypeScript Example
 
-Welcome to the sample code for shopping cart application using Vue 3, TypeScript, and Pinia.
+Welcome to the London Fog Vue 3 + TypeScript example repository! This project showcases how to build a "London Fog" tea component using Vue 3 and TypeScript. It's inspired by and based on the original tutorial by Divya Sasidharan. You can watch her insightful tutorial [here](https://www.youtube.com/watch?v=O5xF_JHb5oc).
 
 ## Getting Started
 
@@ -15,9 +15,11 @@ Before you begin, ensure you have a Node.js environment set up. You have two opt
 
 ### Installation
 
-To get started, clone this repository to your local machine and install the required dependencies using:
+To get started, clone this repository to your local machine and install the required dependencies:
 
 ```bash
+git clone git@github.com:GVSU-CIS371/london-fog.git
+cd london-fog
 npm install
 ```
 
@@ -33,6 +35,10 @@ npm run dev
 
 Contributions to improve the London Fog example are welcome! Feel free to submit issues and pull requests.
 
+## Acknowledgments
+
+- A special thank you to Divya Sasidharan for her original tutorial that inspired this Vue 3 adaptation.
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
