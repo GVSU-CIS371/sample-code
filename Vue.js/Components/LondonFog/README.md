@@ -15,11 +15,9 @@ Before you begin, ensure you have a Node.js environment set up. You have two opt
 
 ### Installation
 
-To get started, clone this repository to your local machine and install the required dependencies:
+To get started, clone this repository to your local machine and install the required dependencies using:
 
 ```bash
-git clone git@github.com:GVSU-CIS371/london-fog.git
-cd london-fog
 npm install
 ```
 
