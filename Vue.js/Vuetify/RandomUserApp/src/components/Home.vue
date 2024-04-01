@@ -72,7 +72,7 @@ const headers = ref([
   { text: "Age", value: "dob" },
   { title: "Actions", key: "actions", sortable: false },
 ]);
-const curItem = ref<User>({
+const curUser = ref<User>({
   name: { first: "", last: "", title: "" },
   email: "",
   location: {
@@ -90,7 +90,7 @@ const curItem = ref<User>({
   },
 });
 function showItem(item: User) {
-  curItem.value = item;
+  curUser.value = item;
   dialog.value = true;
 }
 function close() {
