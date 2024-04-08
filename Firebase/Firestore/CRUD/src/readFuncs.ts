@@ -51,7 +51,7 @@ function sortAndLimit(db: Firestore) {
 }
 
 export function run(db: Firestore) {
-  // selectAllFromCollections(db);
+  //   selectAllFromCollections(db);
   search(db);
-  // sortAndLimit(db);
+  //   sortAndLimit(db);
 }

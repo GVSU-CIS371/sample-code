@@ -13,12 +13,11 @@ import { run as updateOp } from "./updateFuncs";
 import { run as deleteOp } from "./deleteFuncs";
 import { listen } from "./listenerFuncs";
 const app: FirebaseApp = initializeApp(firebaseConfig, "Firestore sample code");
-console.log("Create Firebase App", app.name);
 const db: Firestore = getFirestore(app);
 
-createOp(db);
+// createOp(db);
 
-// readOp(db);
+readOp(db);
 
 // updateOp(db);
 // deleteOp(db);

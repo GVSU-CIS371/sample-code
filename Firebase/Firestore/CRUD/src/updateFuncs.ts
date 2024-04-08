@@ -18,8 +18,4 @@ export async function run(db: Firestore) {
     capital: "City of Lansing",
   });
   await updateDoc(mich, { population: increment(517) });
-
-  const gr = doc(db, "states/MI/cities/GRR");
-  await updateDoc(gr, { universities: ["GVSU", "Calvin", "XYZ"] });
-  await updateDoc(gr, { universities: arrayRemove("XYZ") });
 }
