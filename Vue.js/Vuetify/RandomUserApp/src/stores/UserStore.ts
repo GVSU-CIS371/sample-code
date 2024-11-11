@@ -9,7 +9,7 @@ export const useUserStore = defineStore("UserStore", {
   actions: {
     async fill() {
       const res = await fetch(
-        "https://randomuser.me/api?results=30&nat=gb,fr&inc=name,email,picture,location,dob"
+        "https://randomuser.me/api?results=50&nat=gb,fr&inc=name,email,picture,location,dob"
       );
       this.users = await res.json();
     },
