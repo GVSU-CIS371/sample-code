@@ -27,7 +27,7 @@ const userInfo = ref("");
 const auth: Auth | null = getAuth();
 onMounted(() => {
   onAuthStateChanged(auth, (user: User | null) => {
-    console.log("Auth changed", user);
+    console.log("Auth changed", user?.uid);
     if (user) {
       userPhotoURL.value = user.photoURL ?? "";
       userInfo.value = `${user.displayName ?? "No Name"}`;

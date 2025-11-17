@@ -74,6 +74,7 @@ const createAccount = async () => {
       u_email.value,
       u_pass.value
     );
+    console.log(cr);
     if (emailVerification.value) {
       await sendEmailVerification(cr.user).catch((err) => console.log(err));
       await signOut(auth);
@@ -129,7 +130,8 @@ const withGMail = async () => {
 const withGitHub = async () => {
   try {
     const provider = new GithubAuthProvider();
-    await signInWithPopup(auth, provider);
+    const cr = await signInWithPopup(auth, provider);
+    console.log(cr);
     router.push({ name: "home", params: { byWayOf: "GitHub" } });
   } catch (err: any) {
     showMessage(`Unable to login with GitHub ${err.message}`);
