@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import { createRouter, createWebHashHistory } from "vue-router";
-// import "./style.css";
+import "./style.css";
 import App from "./App.vue";
 import Home from "./components/Home.vue";
 import Forecast from "./components/Forecast.vue";
@@ -9,23 +9,22 @@ import Hourly from "./components/Hourly.vue";
 import ForecastByZip from "./components/ForecastByZip.vue";
 
 // Step 2A: Define routes and create router instance
-const myComponentRoutes = [
+const routes = [
   { path: "/", component: Home },
   { path: "/forecast", component: Forecast },
   { path: "/settings", component: Settings },
   { path: "/hourly", component: Hourly },
   {
-    name: "ByZip",
+    name: "ForecastByZip",
     component: ForecastByZip,
     props: true,
     path: "/region/:zipCode/:numDays",
-    // path: "/region/:zipCode/next/:numDays",
   },
 ];
-const myRouter = createRouter({
+const router = createRouter({
   history: createWebHashHistory(),
-  routes: myComponentRoutes,
+  routes,
 });
 
-// Step 2B: Use the router with your Vue.js app
-createApp(App).use(myRouter).mount("#app");
+// Step 2B: Use the router instance in the Vue app
+createApp(App).use(router).mount("#app");
